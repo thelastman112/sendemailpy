@@ -1,17 +1,18 @@
 # Import Library smtplib 
 import smtplib
 
-# Setup Email Login 
+# Setup Email Login pengirim 
 gmail_user = input (str("Masukan Akun Gmail : "))
+# Password yang dimasukkan adalah password buatan dari gmail bagian keamanan
 gmail_app_pass = input(str("Masukan Password Gmail : "))
 
 # Setup Pengirim, penerima, judul dan isi email 
-
 sent_from = gmail_user
 sent_to = input(str("Masukan Gmail Penerima Lalu Akhiri Dengan Enter : "))
 sent_subject = input(str("Masukan Subject : "))
 sent_body = input(str("Masukan Pesan : "))
 
+# Setup isi email
 email_text = """\ 
 From : %s 
 To : %s
